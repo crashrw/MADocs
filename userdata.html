@@ -1,0 +1,3587 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Gamedata - METAL ARMS DOCS</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gamedata" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="METAL ARMS DOCS" class="md-header__button md-logo" aria-label="METAL ARMS DOCS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            METAL ARMS DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Gamedata
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="METAL ARMS DOCS" class="md-nav__button md-logo" aria-label="METAL ARMS DOCS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    METAL ARMS DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fileformats.html" class="md-nav__link">
+        File Formats
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="levels.html" class="md-nav__link">
+        Level Names
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="starcommands.html" class="md-nav__link">
+        Star Commands
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Gamedata
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="userdata.html" class="md-nav__link md-nav__link--active">
+        Gamedata
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shared-flags" class="md-nav__link">
+    Shared Flags
+  </a>
+  
+    <nav class="md-nav" aria-label="Shared Flags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bot-flags" class="md-nav__link">
+    Bot flags
+  </a>
+  
+    <nav class="md-nav" aria-label="Bot flags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bot-types" class="md-nav__link">
+    Bot Types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goodie-flags" class="md-nav__link">
+    Goodie Flags
+  </a>
+  
+    <nav class="md-nav" aria-label="Goodie Flags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goodie-types" class="md-nav__link">
+    Goodie Types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#door-flags" class="md-nav__link">
+    Door flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elevator-flags" class="md-nav__link">
+    Elevator flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#destructible-flags" class="md-nav__link">
+    Destructible flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-flags" class="md-nav__link">
+    Switch flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tripwire-flags" class="md-nav__link">
+    Tripwire flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#liquidvolume-flags" class="md-nav__link">
+    LiquidVolume flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alarmnet-flags" class="md-nav__link">
+    AlarmNet flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spawn-system-flags" class="md-nav__link">
+    Spawn System flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-console-flags" class="md-nav__link">
+    Control Console flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dispenser-flags" class="md-nav__link">
+    Dispenser flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sound-entity-flags" class="md-nav__link">
+    Sound Entity flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#particle-flags" class="md-nav__link">
+    Particle flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detpack-flags" class="md-nav__link">
+    DetPack flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zipline-flags" class="md-nav__link">
+    ZipLine flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vehicle-flags" class="md-nav__link">
+    Vehicle flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sentry-flags" class="md-nav__link">
+    Sentry flags
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shared-flags" class="md-nav__link">
+    Shared Flags
+  </a>
+  
+    <nav class="md-nav" aria-label="Shared Flags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bot-flags" class="md-nav__link">
+    Bot flags
+  </a>
+  
+    <nav class="md-nav" aria-label="Bot flags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bot-types" class="md-nav__link">
+    Bot Types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goodie-flags" class="md-nav__link">
+    Goodie Flags
+  </a>
+  
+    <nav class="md-nav" aria-label="Goodie Flags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goodie-types" class="md-nav__link">
+    Goodie Types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#door-flags" class="md-nav__link">
+    Door flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elevator-flags" class="md-nav__link">
+    Elevator flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#destructible-flags" class="md-nav__link">
+    Destructible flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-flags" class="md-nav__link">
+    Switch flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tripwire-flags" class="md-nav__link">
+    Tripwire flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#liquidvolume-flags" class="md-nav__link">
+    LiquidVolume flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alarmnet-flags" class="md-nav__link">
+    AlarmNet flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spawn-system-flags" class="md-nav__link">
+    Spawn System flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-console-flags" class="md-nav__link">
+    Control Console flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dispenser-flags" class="md-nav__link">
+    Dispenser flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sound-entity-flags" class="md-nav__link">
+    Sound Entity flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#particle-flags" class="md-nav__link">
+    Particle flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detpack-flags" class="md-nav__link">
+    DetPack flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zipline-flags" class="md-nav__link">
+    ZipLine flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vehicle-flags" class="md-nav__link">
+    Vehicle flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sentry-flags" class="md-nav__link">
+    Sentry flags
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="gamedata">Gamedata</h1>
+<hr />
+<p>Gamedata flags &amp; values are case insensitive.</p>
+<p>Gamedata is written as <code>Flag=Value</code>. Defining an entity to be a Mil Grunt would be...</p>
+<pre><code>type=botgrunt
+</code></pre>
+<h2 id="shared-flags">Shared Flags</h2>
+<p>Flags shared between almost all types of entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Optional</td>
+<td><a href="#name">Name</a></td>
+<td></td>
+<td>Name=Goff</td>
+<td>Tags an entity with a name used by other entities or in scripting</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Attach</td>
+<td></td>
+<td>Attach=Goff</td>
+<td>Parents entity with another entity so they move together</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AttachBone</td>
+<td></td>
+<td>AttachBone=Head</td>
+<td>Parents entity with the name of another entity’s bone</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>InWorld</td>
+<td>True | False</td>
+<td>InWorld=False</td>
+<td>Makes an entity invislbe and intangible. Useful if you want to spawn entity with a script</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Tripper</td>
+<td>On | Off</td>
+<td>Tripper=on</td>
+<td>If tripper=on, allows the entity to activate tripwire triggers</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Include</td>
+<td></td>
+<td>Include=vlax01</td>
+<td>Includes a specified CSV file. Can be used by bots for external User Properties like Vlax</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Health</td>
+<td>0.0 to 1.0</td>
+<td>Health=0.6</td>
+<td>Sets an entities health. For bots with batteries (Glitch) 1 = one full battery</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ArmorProfile</td>
+<td></td>
+<td>ArmorProfile=pred</td>
+<td>Uses an entry in armor.csv as armor. Use nohitpoint if entity recieves no damage</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ArmorExplosion</td>
+<td>0 to 100</td>
+<td>ArmorExplosion=50</td>
+<td>Vulnerability to explosion damage. 100 = invulnerable</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ArmorFlame</td>
+<td>0 to 100</td>
+<td>ArmorFlame=75</td>
+<td>Vulnerability to flame damage. 100 = invulnerable</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ArmorBullet</td>
+<td>0 to 100</td>
+<td>ArmorBullet=100</td>
+<td>Vulnerability to bullet damage. 100 = invulnerable</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>GoodieBag=1, one</td>
+<td></td>
+<td></td>
+<td>Gives entity a “goodiebag” containing an item dropped on death</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Goodie1</td>
+<td>ItemName,1,1,1</td>
+<td>Washer,6,6,1</td>
+<td>Item in bag, first two digits are amount of item and must be the same</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Goodie2</td>
+<td>ItemName,1,1,1</td>
+<td>Washer,6,6,1</td>
+<td>Additional goodie in bag. Entity can carry up to 6 goodies.</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sound_Ambient_Tag</td>
+<td>Sound name</td>
+<td>Sound_Ambient_Tag=L15_convey</td>
+<td>Sound Wav name or sfb tag to play</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sound_Ambient_Volume</td>
+<td>0.0 to 1.0</td>
+<td>Sound_Ambient_Volume=0.5</td>
+<td>Sound volume</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sound_Ambient_Radius</td>
+<td></td>
+<td>Sound_Ambient_Radius=15</td>
+<td>Radius sound can be heard</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sound_Ambient_Off</td>
+<td>0 | 1</td>
+<td>Sound_Ambient_Off=1</td>
+<td>Whether the sound should start off</td>
+</tr>
+</tbody>
+</table>
+<h3 id="name"><u>Name</u></h3>
+<p>To give the entity a name that can be referenced by another entity and by the game code, use the "name=" command. This is optional. Don't give it a name if you don't have to. If you're not sure whether your entity needs a name or not, then don't give it one.</p>
+<h2 id="bot-flags">Bot flags</h2>
+<p>Flags used by bots</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>type</td>
+<td><a href="userdata.html#bot-types">Bot Types</a></td>
+<td>type=botgrunt</td>
+<td>The type of bot this is. Refer below for list of bot types</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ArmorModifier</td>
+<td>-1.0 to 1.0</td>
+<td>ArmorModifier= -0.9</td>
+<td>Changes strength of bot’s armor</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>NPCWeapon0</td>
+<td>Laser</td>
+<td>NPCWeapon0=spew</td>
+<td>Primary weapon used by this bot. (Grunt and Droid Miner only)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>NPCWeapon1</td>
+<td>grenade</td>
+<td>NPCWeapon1=grenade</td>
+<td>Secondary weapon used by this bot. (Grunt only)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>DropWeapon</td>
+<td>True | False</td>
+<td>DropWeapon=False</td>
+<td>If set to false, this bot will never drop it's weapon when killed</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>DataPort</td>
+<td>Open | Closed</td>
+<td>DataPort=Open</td>
+<td>If set to open, this bot gains a dataport that Glitch can use to possess this bot through the Control Tether, otherwise Glitch cannot use the control tether on this bot</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>PossessDist</td>
+<td>Integer</td>
+<td>PossessDist=250</td>
+<td>Max distance this bot can travel from it's point of possession before ejecting Glitch</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Shield</td>
+<td>On | Off</td>
+<td>Shield=On</td>
+<td>(Grunts and Titans only) <br> Spawns this bot with a shield <br> A Titan will gain a L3 Rocket Launcher</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>DisguiseTime</td>
+<td>Time in seconds</td>
+<td>DisguiseTime=21</td>
+<td>How long in seconds before this bot realizes Glitch is disguised as a Mil</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sleeping</td>
+<td>True | False</td>
+<td>Sleeping=True</td>
+<td>(Grunt &amp; Trooper Only) <br> Grunt: Sit down in a bored expression <br> Trooper: Perch upside down levitating in position, upon waking up the trooper will drop down</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>PowerDownUntilPosessed</td>
+<td>True | False</td>
+<td></td>
+<td>If set to true, this bot will always be powered down unless possessed by Glitch</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>CanBeRecruited</td>
+<td>True | False</td>
+<td></td>
+<td>If set to true, this bot can be affected by a recruiter grenade</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>CanBeRecruitedWithoutDataport</td>
+<td>True | False</td>
+<td></td>
+<td>If set to true, this bot can be affected by a recruiter grenade even if DataPort=Closed</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>NoEMP</td>
+<td>True | False</td>
+<td>NoEMP=True</td>
+<td>Whether this bot is affected by EMP grenades</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SpotLightOn</td>
+<td>True | False</td>
+<td>SpotLightOn=True</td>
+<td>When this bot is spawned, should it have it's spotlight enabled</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>disablelight</td>
+<td>True | False</td>
+<td>disablelight=True</td>
+<td>When this bot is spawned, should it have it's spotlight disabled</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>KeepLimb</td>
+<td>All | None</td>
+<td>KeepLimb=All</td>
+<td>Prevents specified limbs from breaking off</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>MeshReplace</td>
+<td>.ape name</td>
+<td></td>
+<td>Change the bot mesh to the one provided</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>MeshVersion</td>
+<td>0 | 1</td>
+<td>MeshVersion=1</td>
+<td>Swaps to alternate mesh for bot. Only used for Corrosive</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Vlax</td>
+<td>True | False</td>
+<td>Vlax=True</td>
+<td>(Grunts Only) <br> Whether this bot is Vlax</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_Job</td>
+<td>Wait | Patrol | Wander</td>
+<td>AI_Job=Wait</td>
+<td>Tells the bot to wait, use a Patrol Path, or wander around</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_WanderRadius</td>
+<td></td>
+<td>AI_WanderRadius=40</td>
+<td>Radius bot is allowed to wander (Only if AI_Job=Wander)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_WanderStayInRoom</td>
+<td>True | False</td>
+<td>AI_WanderStayInRoom=True</td>
+<td>Bot only wanders in this room (Only if AI_Job=Wander)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_WanderPoints</td>
+<td>A, B, C</td>
+<td>Point1, Point2</td>
+<td>Use names of entities as points to wander between (Only if AI_Job=Wander)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_PatrolPath</td>
+<td></td>
+<td>AI_PatrolPath=PatrolPath01</td>
+<td>Use the name of a spline entity as patrol path (Only if AI_Job=Patrol)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_PatrolDir</td>
+<td>Forward | Backward</td>
+<td>AI_PatrolDir=Forward</td>
+<td>Direction to move on patrol path (Only if AI_Job=Patrol)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_PatrolSpeed</td>
+<td>0 - 100</td>
+<td>AI_PatrolSpeed=70</td>
+<td>% of bots base movement speed to use when patrolling (Only if AI_Job=Patrol)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_FollowLeader</td>
+<td></td>
+<td>AI_FollowLeader=Goff</td>
+<td>Name of bot to treat as leader</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_BaseSpeed</td>
+<td>0 - 100</td>
+<td>AI_BaseSpeed =60</td>
+<td>% of bots base movement speed the bot is capable of</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_TorsoAlignmentSpeedConstraint</td>
+<td>0 - 100</td>
+<td></td>
+<td>How much speed is limited by poor "forward" torso alignment</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_TorsoAlignmentVelConstraint</td>
+<td>0 - 100</td>
+<td></td>
+<td>How much the direction of movement is limited by poor "forward" torso alignment</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_TorsoAlignmentConstraintIgnorable</td>
+<td>True | False</td>
+<td></td>
+<td>Whether to ignore poor “forward” torso alignment entirely</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_Race</td>
+<td>Ambient | Droid | Good | Bad</td>
+<td>AI_Race=Droid</td>
+<td>Race bot is affiliated with. Ambient means friendly unless attacked</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_AttackWho</td>
+<td>A, B</td>
+<td>AI_AttackWho=Players, Enemy</td>
+<td>Use at least one of (Enemy, Neutral, Friendly) and one of (Players, NPC)<br>Use an exclamation point to excluse one. Example !Players, NPC, Enemy</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_Aggression</td>
+<td>0 - 100</td>
+<td>AI_Aggression=50</td>
+<td>How likely bot is to go on attack when seeing an enemy</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_Courage</td>
+<td>0 - 100</td>
+<td>AI_Courage=100</td>
+<td>How likely bot is to flee when threatened</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_Intelligence</td>
+<td>0 - 100</td>
+<td>AI_Intelligence=100</td>
+<td>How well bot retains and applies knowledge</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_WeaponBurstDelay</td>
+<td>0 - 100</td>
+<td>AI_WeaponBurstDelay=1</td>
+<td>Delay between bursts of weapon fire</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_WeaponBurstCount</td>
+<td>0 - 100</td>
+<td>AI_WeaponBurstCount=6</td>
+<td>Number of bursts of weapon fire</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_WeaponAccuracy</td>
+<td>0 - 100</td>
+<td>AI_WeaponAccuracy=70</td>
+<td>Weapon accuracy</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_NumGrenadesAtStart</td>
+<td></td>
+<td>AI_NumGrenadesAtStart=25</td>
+<td>Number of grenades bot starts with (only if using NPCWeapon1=grenade)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_OddsOf_Ignoring_Nearby_Grenades</td>
+<td>0 - 100</td>
+<td></td>
+<td>Odds of bot reacting to a nearby grenade</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_Grenade_Use</td>
+<td>Whenever | Smart | EnemySight</td>
+<td>AI_Grenade_Use=First_Contact</td>
+<td>When and how bot uses grenades</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_Grenade_Use_First_Contact</td>
+<td>True | False</td>
+<td></td>
+<td>Whether bot uses a grenade upon first contact with enemy</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_Attack_Notify_Radius</td>
+<td></td>
+<td>AI_Attack_Notify_Radius=90</td>
+<td>Radius to notify allies when spotting or attacking enemy</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_WaitLookAt</td>
+<td></td>
+<td>AI_WaitLookAt=LookAtMe</td>
+<td>Name of an entity bot will look at when waiting (only if AI_Job=Wait)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ai_waitLookAroundOdds</td>
+<td>0 - 100</td>
+<td>ai_waitLookAroundOdds=50</td>
+<td>% chance of bot looking around every 30 seconds (only if AI_Job=wait)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_Eye_Scan_Dist</td>
+<td></td>
+<td>AI_Eye_Scan_Dist=1200</td>
+<td>Distance bot will scan when using eyes</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_EyeCosHalfFOV</td>
+<td></td>
+<td>AI_EyeCosHalfFOV=0.0f</td>
+<td>-1.0f = 360 FOV. 0.0f = 180 FOV. 0.707 = 90 FOV. 1.0f = 0 FOV (no vision)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_EyeCosHalfFOV_Alert</td>
+<td></td>
+<td>AI_EyeCosHalfFOV_Alert=0.0f</td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_Bonus_Eye_Scan_Dist_For_Players</td>
+<td></td>
+<td></td>
+<td>Additional distance added to AI_Eye_Scan_Dist when searching for player</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_Bonus_Eye_Scan_Dist_For_Players_Alert</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_HearingScale</td>
+<td></td>
+<td>AI_HearingScale=230</td>
+<td>The radius of all sounds in the world become magnified by this value for this bot</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_HearingScale_Alert</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_StartleMin</td>
+<td>0 - 100</td>
+<td>AI_StartleMin=12</td>
+<td>Minimum time between startles. Default 10</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_StartleMax</td>
+<td>0 - 100</td>
+<td>AI_StartleMax=25</td>
+<td>Maximum time between startles. Default 30</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_WakeUp_Min_Rad</td>
+<td></td>
+<td>AI_WakeUp_Min_Rad=20</td>
+<td>Radius for bot being woken up. Default 35</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_AttackMaxDistFromOrigin</td>
+<td></td>
+<td>AI_AttackMaxDistFromOrigin=100</td>
+<td>Max distance (feet) bot will travel from spawn point to attack.</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_PreferStopAndShoot</td>
+<td>True | False</td>
+<td>AI_PreferStopAndShoot=False</td>
+<td>Whether bot prefers to attack on the move, or stop moving when attacking</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_UseVehicleWhen</td>
+<td>Never | Init</td>
+<td>AI_UseVehicleWhen=Never</td>
+<td>Whether or when to use a nearby vehicle. Init = on level start</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_UseVehicleType</td>
+<td>Loader | Sentinel | Rat | Ratgun | Pill</td>
+<td>AI_UseVehicleType=Pill</td>
+<td>Type of vehicle bot will use</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_UseVehicleRadius</td>
+<td></td>
+<td>AI_UseVehicleRadius=100</td>
+<td>Radius bot will search for a vehicle</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AI_Buddy_Ctrl</td>
+<td>Never | Auto | OnAction</td>
+<td>AI_Buddy_Ctrl=Auto</td>
+<td>Behavior of allied bots. OnAction = when told, buddy up. Auto = Auto buddy with friendlies</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sci_Friends_In_Need_Scan_Dist</td>
+<td></td>
+<td></td>
+<td>Distance Mil Scientist will search for allies who need help</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ZombieStartFormed</td>
+<td>True | False</td>
+<td>ZombieStartFormed=True</td>
+<td>Whether ZombieBot should start formed on level start</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>PredSpeed</td>
+<td>0 - 100</td>
+<td>PredSpeed=75</td>
+<td>% of base speed Predator can move</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>MaxAltitude</td>
+<td></td>
+<td></td>
+<td>Max height Predator can go to</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>EntityRange</td>
+<td></td>
+<td>EntityRange=200</td>
+<td>Range of the Mortar bots attack</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bot-types">Bot Types</h3>
+<p>Bots are specified in gamedata by the bot name. If I wanted X entity to be a grunt, I would add to gamedata...</p>
+<pre><code>type=botgrunt
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>Bot Name</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Droid Miner</td>
+<td>botblink</td>
+<td></td>
+</tr>
+<tr>
+<td>Droid Krunk</td>
+<td>botkrunk</td>
+<td></td>
+</tr>
+<tr>
+<td>Droid Miner</td>
+<td>botminer</td>
+<td></td>
+</tr>
+<tr>
+<td>Droid Slosh</td>
+<td>botslosh</td>
+<td></td>
+</tr>
+<tr>
+<td>Mil Grunt</td>
+<td>botgrunt</td>
+<td>Use NPCWeapon0= flag to change this bot's weapon</td>
+</tr>
+<tr>
+<td>Mil Elite Guard</td>
+<td>boteliteguard</td>
+<td></td>
+</tr>
+<tr>
+<td>Mil Titan</td>
+<td>bottitan</td>
+<td></td>
+</tr>
+<tr>
+<td>Mil Jump Trooper</td>
+<td>botjumper</td>
+<td></td>
+</tr>
+<tr>
+<td>Mil Predator</td>
+<td>botpred</td>
+<td></td>
+</tr>
+<tr>
+<td>Mil Leech</td>
+<td>botprobe</td>
+<td></td>
+</tr>
+<tr>
+<td>Mil Scientst</td>
+<td>botscientist</td>
+<td></td>
+</tr>
+<tr>
+<td>Mil Snarq</td>
+<td>botsnarq</td>
+<td></td>
+</tr>
+<tr>
+<td>Mil General Corrosive</td>
+<td>botcorrosive</td>
+<td></td>
+</tr>
+<tr>
+<td>Mil Anti Air Gun</td>
+<td>botAAgun</td>
+<td></td>
+</tr>
+<tr>
+<td>Mil Mortar</td>
+<td>botmortar</td>
+<td></td>
+</tr>
+<tr>
+<td>Mil Sentry</td>
+<td>SiteWeapon</td>
+<td></td>
+</tr>
+<tr>
+<td>Swarmer</td>
+<td>botswarmer</td>
+<td></td>
+</tr>
+<tr>
+<td>Zombiebot</td>
+<td>botzombie</td>
+<td></td>
+</tr>
+<tr>
+<td>Zombiebot King</td>
+<td>botzombieboss</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="goodie-flags">Goodie Flags</h2>
+<p>Flags used for item and weapon pickups</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>type=goodie</td>
+<td></td>
+<td></td>
+<td>Required for this entity type</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>GoodieType</td>
+<td><a href="userdata.html#goodie-types">Goodie Types</a></td>
+<td>GoodieType=pup_energy</td>
+<td>Type of goodie.</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>GoodieDuration</td>
+<td>Seconds</td>
+<td>Goodieduration=20</td>
+<td>How long a powerup will last in seconds</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SpawnTime</td>
+<td>Seconds</td>
+<td>Spawntime=5</td>
+<td>How long in seconds before goodie respawns</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Ammo</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>BatteryNum</td>
+<td>1 to 6</td>
+<td>Batterynum=1</td>
+<td>Which battery number to use if GoodieType=Battery (Required)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="goodie-types">Goodie Types</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Uses Levels</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Goodie Name</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><h2>Health</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>pup_energy</td>
+<td>Health</td>
+<td></td>
+<td>Restore 1 battery of health to Glitch</td>
+</tr>
+<tr>
+<td>No</td>
+<td>mega health</td>
+<td>Mega Health</td>
+<td></td>
+<td>Restore all of Glitch's batteries for full health</td>
+</tr>
+<tr>
+<td><h2>Powerups</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td>GoodieDuration controls how long this powerup will last for</td>
+</tr>
+<tr>
+<td>No</td>
+<td>pup_armor</td>
+<td>Shield / Armor</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>pup_weapon</td>
+<td>X2 Weapon Damage</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>pup_speed</td>
+<td>Speed Boost</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>pup_hijump</td>
+<td>Super Jump</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><h2>Campaign</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>chip</td>
+<td>Blue Chip</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>secret chip</td>
+<td>Secret Chip</td>
+<td></td>
+<td>Worth 1 value of currency</td>
+</tr>
+<tr>
+<td>No</td>
+<td>washer</td>
+<td>Washer</td>
+<td></td>
+<td>Worth 25 value of currency</td>
+</tr>
+<tr>
+<td>No</td>
+<td>megawasher</td>
+<td>Gold Washer</td>
+<td></td>
+<td>Used to unlock Multiplayer levels</td>
+</tr>
+<tr>
+<td>No</td>
+<td>Det Pack</td>
+<td>Det Pack</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>Battery</td>
+<td>Battery</td>
+<td></td>
+<td>LOOK INTO battery [1-6]     Battery (make sure to include batterynum)</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>Arm Servo</td>
+<td>Arm Servo upgrade</td>
+<td>goodietype=Arm Servo L2</td>
+<td></td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>EUK</td>
+<td>Equipment Upgrade Kit</td>
+<td>EUK laser L2</td>
+<td>EUK as the prefix, then the weapon name, finally the weapon level as the suffix</td>
+</tr>
+<tr>
+<td>No</td>
+<td>goffhead</td>
+<td>Agent Goff’s Head</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>gofftorso</td>
+<td>Agent Goff’s Torso</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>goffleg</td>
+<td>Agent Goff’s legs</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><h2>Primary Weapons</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Weapons that use levels MUST have L1, L2, or L3 after their name</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>laser</td>
+<td>Mining Laser</td>
+<td>laser L2</td>
+<td></td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>spew</td>
+<td>Spew</td>
+<td>Spew L3</td>
+<td></td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>rocket</td>
+<td>Rocket Launcher</td>
+<td>rocket L3</td>
+<td></td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>blaster</td>
+<td>Scatter Blaster</td>
+<td>blaster L1</td>
+<td></td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>ripper</td>
+<td>Ripper</td>
+<td>ripper L2</td>
+<td></td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>tether</td>
+<td>Control Tether</td>
+<td>tether L3</td>
+<td></td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>flamer</td>
+<td>Toaster</td>
+<td>flamer L1</td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>mortar</td>
+<td>Slingshot</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>rivet</td>
+<td>Rivet Gun</td>
+<td>rivet L2</td>
+<td></td>
+</tr>
+<tr>
+<td><h2>Secondary Weapons</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Weapons that use levels MUST have L1, L2, or L3 after their name</td>
+</tr>
+<tr>
+<td>No</td>
+<td>coring charge</td>
+<td>Coring Charge</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>cleaner</td>
+<td>Cleaner</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>emp grenade</td>
+<td>EMP</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>magma bomb</td>
+<td>Magma Bomb</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>recruiter</td>
+<td>Recruiter Grenade</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>scope</td>
+<td>Scope</td>
+<td>scope L1</td>
+<td></td>
+</tr>
+<tr>
+<td>No</td>
+<td>wrench</td>
+<td>Wrench</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="door-flags">Door flags</h2>
+<p>Flags used for door entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>type=door</td>
+<td></td>
+<td></td>
+<td>Required for door entities</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>BehaveType</td>
+<td>Door / Other</td>
+<td>BehaveType=Door</td>
+<td>Behavior type. Other is used for behaviors other than a normal door</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ActiveRadius</td>
+<td></td>
+<td>ActiveRadius=12</td>
+<td>Door opens when bot is within specified radius around door</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Displace</td>
+<td>X, Y, Z</td>
+<td>Displace=0, 0, 14.5</td>
+<td>X Y Z distances to displace when moving</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>RotateY</td>
+<td></td>
+<td>RotateY=180</td>
+<td>Amount to rotate door as it moves</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Anim</td>
+<td>Animation MTX name</td>
+<td>Anim=aodmdor01</td>
+<td>Animation to play when door opens or closes (Plays in reverse for closing)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AnimSpeed</td>
+<td>Float</td>
+<td>Animspeed=0.8</td>
+<td>Animation speed. Higher numbers = slower speeds.</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>IsPortal</td>
+<td>True | False</td>
+<td>IsPortal=True</td>
+<td>Culls cells behind door when closed (use in conjunction with a portal placed between cells)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AutoClose</td>
+<td>True | False</td>
+<td>AutoClose=False</td>
+<td>Whether door should close automatically</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AIAccess</td>
+<td>True | False</td>
+<td>AIAccess=False</td>
+<td>Whether bots are allowed to use this door</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>PlayerAccess</td>
+<td>True | False</td>
+<td>PlayerAccess=False</td>
+<td>Whether the player is allowed to use this door</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SseAccel</td>
+<td>True | False</td>
+<td>SseAccel=False</td>
+<td>Whether to use acceleration</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>open_start</td>
+<td>Sound name</td>
+<td>open_start=BD_Open</td>
+<td>Sound Wav name or sfb tag to play when door opens</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>open_loop</td>
+<td>Sound name</td>
+<td>open_loop=BD_Loop</td>
+<td>Sound Wav name or sfb tag to play when door is opening</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>open_stop</td>
+<td>Sound name</td>
+<td>open_stop=BD_Close</td>
+<td>Sound Wav name or sfb tag to play when door finished opening</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>close_start</td>
+<td>Sound name</td>
+<td>close_start=BD_Open</td>
+<td>Sound Wav name or sfb tag to play when door starts closing</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>close_loop</td>
+<td>Sound name</td>
+<td>close_loop=BD_Loop</td>
+<td>Sound Wav name or sfb tag to play when door is closing</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>close_stop</td>
+<td>Sound name</td>
+<td>close_stop=BD_Close</td>
+<td>Sound Wav name or sfb tag to play when door finishes closing</td>
+</tr>
+</tbody>
+</table>
+<h2 id="elevator-flags">Elevator flags</h2>
+<p>Flags used for elevator entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>Type=Lift</td>
+<td></td>
+<td></td>
+<td>Required for lift entities</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>BehaveType</td>
+<td>Elevator / Other</td>
+<td></td>
+<td>Behavior type. Other is used for behaviors other than a normal lift</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Displace</td>
+<td>X, Y, Z</td>
+<td>Displace=0, 0, 14.5</td>
+<td>X Y Z distances to displace when moving</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Anim</td>
+<td>Animation MTX name</td>
+<td>Anim=LiftAnim</td>
+<td>Animation to play when elevator is activated</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AnimSpeed</td>
+<td>Float</td>
+<td>Animspeed=0.8</td>
+<td>Animation speed. Higher numbers = slower speeds</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>MoveTime1</td>
+<td>Float</td>
+<td>MoveTime1=1</td>
+<td>Time to open in seconds</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>MoveTime2</td>
+<td>Float</td>
+<td>MoveTime2=1</td>
+<td>Time to close in seconds. Defaults to same value as MoveTime1</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AutoClose</td>
+<td>True | False</td>
+<td>AutoClose=False</td>
+<td>Whether lift should return to default position automatically</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AutoOpenFront</td>
+<td>True | False</td>
+<td>AutoOpenFront=True</td>
+<td>Auto open if bot enters radius near default position</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AutoOpenBack</td>
+<td>True | False</td>
+<td>AutoOpenBack=True</td>
+<td>Auto close if opened and bot enters radius near opened position</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AutoCloseDelay</td>
+<td>Time in seconds</td>
+<td>AutoCloseDelay=2</td>
+<td>Time in seconds before auto closing</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ActiveRadius</td>
+<td></td>
+<td>ActiveRadius=12</td>
+<td>Radius around default position. Activates when bot enters this radius</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ActiveRadius2</td>
+<td></td>
+<td>ActiveRadius2=12</td>
+<td>Radius around opened position. If in default position and bot enters radius, lift will open</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>NoLiftBlockChecking</td>
+<td>True | False</td>
+<td>NoLiftBlockChecking=False</td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>lift_start</td>
+<td>Sound name</td>
+<td>lift_start=SOM_MliIn</td>
+<td>Sound Wav name or sfb tag to play when lift starts moving</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>lift_loop</td>
+<td>Sound name</td>
+<td>lift_loop=SOM_MliLp</td>
+<td>Sound Wav name or sfb tag to play when lift is moving</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>lift_stop</td>
+<td>Sound name</td>
+<td>lift_stop=SOM_MliSp</td>
+<td>Sound Wav name or sfb tag to play when lift stops moving</td>
+</tr>
+</tbody>
+</table>
+<h2 id="destructible-flags">Destructible flags</h2>
+<p>Flags used for destructible entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>Type=Destruct</td>
+<td></td>
+<td></td>
+<td>Required for destructible entities</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Mesh</td>
+<td>A, B</td>
+<td>Mesh=Generator0, GenDestroyed</td>
+<td>Ape mesh name to start as, ape mesh to become when destroyed. Optionally B leave blank</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Anim</td>
+<td>Animation MTX name</td>
+<td>anim=aom_gen_04</td>
+<td>Looping animation to play while object is alive</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AnimSpeed</td>
+<td>Float</td>
+<td>Animspeed=0.8</td>
+<td>Animation speed. Higher numbers = slower speeds. Use negative numbers to make the<br>Animation play in reverse.</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ArmorProfile</td>
+<td></td>
+<td>ArmorProfile=pred</td>
+<td>Uses an entry in armor.csv as armor</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Health</td>
+<td>0.0 to 1.0</td>
+<td>Health=0.6</td>
+<td>Amount of health</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SoundAlive</td>
+<td>Sound name</td>
+<td>SoundAlive =L15_generat</td>
+<td>Sound Wav name or sfb tag to play while object is alive</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SoundDead</td>
+<td>Sound name</td>
+<td></td>
+<td>Sound Wav name or sfb tag to play while object is destroyed</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Targetable</td>
+<td>True | False</td>
+<td>Targetable=False</td>
+<td>Whether the reticle turns red when targeting this entity</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ProjReact</td>
+<td>HurtMe</td>
+<td>ProjReact=HurtMe</td>
+<td>Needed for destructible entities tied to scripted events</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Particle1</td>
+<td>Seconds, ParticleName, Bone</td>
+<td>particle1=60,flameyjr2</td>
+<td>Time in seconds particle can play. Bone is what particle is attached to on dead mesh</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Particle2</td>
+<td>Seconds, ParticleName, Bone</td>
+<td>particle2=20,flameyjr2,exp1</td>
+<td>Can have up to 4 particles on destructible entity. If optional bone name is specified, the<br>Particle will emit from that bone’s Z axis (Y axis in Max/Blender) If no bone is specified,<br>The particle will emit from the center of the object emitting upward</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Explosion</td>
+<td>Explosion type, Bone</td>
+<td>explosion=SuperManKiller,exp1</td>
+<td>Use one of the explosion types listed in xgrp_lev.csv. Bone name is optional</td>
+</tr>
+</tbody>
+</table>
+<h2 id="switch-flags">Switch flags</h2>
+<p>Flags used for switch entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>Type=switch</td>
+<td></td>
+<td></td>
+<td>Required for switch entities</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>TriggerEvent</td>
+<td>True | False</td>
+<td>TriggerEvent=True</td>
+<td>Enables triggering events when pressed</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ReqChip</td>
+<td>True | False</td>
+<td>ReqChip=True</td>
+<td>Whether this switch requires a blue chip to be used</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>UseBy</td>
+<td>Mil</td>
+<td>UseBy=Mil</td>
+<td>Whether this switch is restricted to Mils only (default is False)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>DoorName</td>
+<td></td>
+<td>DoorName=door01</td>
+<td>Open this door in the world when switch is pressed</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>DoorAction</td>
+<td>Open | Close | Lock | Unlock | Toggle</td>
+<td>DoorAction=Open</td>
+<td>Action for the door to perform when switch is pressed</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tripwire-flags">Tripwire flags</h2>
+<p>Flags used for tripwire entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>TripWireBuild</td>
+<td>On | Off</td>
+<td>TripWireBuild=On</td>
+<td>Required for tripwire entities</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>TripWireEvent</td>
+<td>Enter | Exit | Inside | All | None</td>
+<td>TripWireEvent=Enter</td>
+<td>When / how to trigger event. Can use multiple, separate with commas</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>TripWireWho</td>
+<td>Player | Enemy | Friendly | All</td>
+<td>TripWireWho=Player</td>
+<td>Who is allowed to trigger this tripwire. Can use multiple, separate with commas</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>TriggerMode</td>
+<td>Once | Multiple</td>
+<td>TriggerMode=Once</td>
+<td>Whether to trigger once, or every time tripwire is tripped. Default is multiple</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>TripWireFilterEntityName</td>
+<td></td>
+<td>TripWireFilterEntityName=Goff</td>
+<td>Only the entity in the world with the specified name can activate this tripwire</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>TripWireKillMode</td>
+<td>Volume | Plane</td>
+<td>TripWireKillMode=Volume</td>
+<td>Turn tripwire into a kill volume</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>TripWireDamageBuild</td>
+<td>0 | 1</td>
+<td>TripWireDamageBuild=1</td>
+<td>Required for Tripwires that do damage</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>TripWireDamageEnable</td>
+<td>0 | 1</td>
+<td>TripWireDamageEnable=1</td>
+<td>Required for Tripwires that do damage</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>TripWreDamageNormIntensity</td>
+<td>0 to 1</td>
+<td>TripWreDamageNormIntensity=1</td>
+<td>Intensity of Tripwire damage</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>DamageProfile</td>
+<td></td>
+<td>DamageProfile=FlamerBurnL1</td>
+<td>Damage type from damage.csv</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>TripWireSpawnDeathEffects</td>
+<td>True | False</td>
+<td>TripWireSpawnDeathEffects=False</td>
+<td>Whether to spawn special affects when an entity is killed by this tripwire</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>TripWireIsAIZone</td>
+<td>True | False</td>
+<td>TripWireIsAIZone=True</td>
+<td>Controls the behavior of bots while they’re on patrol. MUST be parented to patrol path<br>Object in Max/Blender</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AIZone_Behavior</td>
+<td>Wait | Look | Speed | Anim</td>
+<td>AIZone_Behavior=Wait,Look</td>
+<td>What behavior to use.<br>Wait = Bot will stop when entering zone.<br>Look = Bot will look at entity listed in Aizone_ParamName (only allows one entity)<br>Speed = Speed the bot will change to inside zone. Speed returns to normal when exiting<br>Anim = BotTalk file to use when entering zone</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AIZone_Param1min</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AIZone_Param1Max</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AIZone_Param2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AIZone_ParamName</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AIZone_ParamTime</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="liquidvolume-flags">LiquidVolume flags</h2>
+<p>Flags used for liquid volume entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>Type=</td>
+<td>LiquidVolume</td>
+<td></td>
+<td>Required for liquid volume entities</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>LiqType</td>
+<td>Water | Texture | Molten | Mercury</td>
+<td>LiqType=Texture</td>
+<td>Type of liquid</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>DropFreq</td>
+<td>0 to 200</td>
+<td>DropFreq=5.5</td>
+<td>Drops per second. Controls how active the liquid is</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Opacity</td>
+<td>0 to 100</td>
+<td>Opacity=75</td>
+<td>Opacity of liquid texture</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Texture1</td>
+<td>Texture Name</td>
+<td>Texture1=tedm_rok13</td>
+<td>Texture to use as liquid surface. If LiqType=Molten, texture is emissive</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Texture2</td>
+<td>Texture Name</td>
+<td>Texture2=tf_lava</td>
+<td>If LiqType=Molten, Texture2 is the crust of the lava</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Tile</td>
+<td>0 to 128</td>
+<td>Tile=2</td>
+<td>How much the texture tiles (not the reflection texture)</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>CurrentX</td>
+<td>Integer</td>
+<td>CurrentX=0.2</td>
+<td>Current in X direction in feet per sec</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>CurrentY</td>
+<td>Integer</td>
+<td>CurrentY=0.5</td>
+<td>Current in Y direction in feet per sec</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>EnableRender</td>
+<td>0 | 1</td>
+<td>EnableRender=0</td>
+<td>Whether to render the liquid</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>EnableSplashes</td>
+<td>0 | 1</td>
+<td>EnableSplashes=0</td>
+<td>Whether to enable water splash effects</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ColorRed</td>
+<td>0 to 255</td>
+<td>ColorRed=0</td>
+<td>RGB tint</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ColorGreen</td>
+<td>0 to 255</td>
+<td>ColorGreen=128</td>
+<td>RGB tint</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ColorBlue</td>
+<td>0 to 255</td>
+<td>ColorBlue=255</td>
+<td>RGB tint</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>PartImpact</td>
+<td>Particle name</td>
+<td>partimpact=e_lava_expl</td>
+<td>Particle to emit for liquid impact</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>PartExplode</td>
+<td>Particle name</td>
+<td>PartExplode=e_lava_expl</td>
+<td>Particle to emit for liquid explosion</td>
+</tr>
+</tbody>
+</table>
+<h2 id="alarmnet-flags">AlarmNet flags</h2>
+<p>Flags used for AlarmNet entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>XA_AlarmNetName</td>
+<td></td>
+<td>XA_AlarmNetName=alarm01</td>
+<td>Tag used for this AlarmNet network. All alarms/doors/switches that are a part of this AlarmNet network must use the same name</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>XA_IsVisible_Spawn_Pts</td>
+<td>Yes | No</td>
+<td>XA_IsVisible_Spawn_Pts=Yes</td>
+<td>Bots will spawn regardless if the player can see them spawning</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>XA_IsHidden_Spawn_Pts</td>
+<td>Yes | No</td>
+<td>XA_IsHidden_Spawn_Pts=Yes</td>
+<td>Bots will only spawn on points the player cannot see or if they’re not looking</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>XA_AlarmNet_Ctrl</td>
+<td>No_Timer</td>
+<td>XA_AlarmNet_Ctrl=no_timer</td>
+<td>Use if this AlarmNet is not controlled by a timer</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>XA_AlarmNet_Max_Living_Autobots</td>
+<td>0 to 255</td>
+<td>XA_AlarmNet_Max_Living_Autob-<br>Ots=3</td>
+<td>Maximum amount of bots alive at any given time</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>XA_AlarmNet_TotalBotsToAutoSpawn</td>
+<td>0 to 255</td>
+<td>XA_AlarmNet_TotalBotsToAutoSp-<br>Awn=6</td>
+<td>Maximum total number of bots spawned by this AlarmNet</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_AlarmNet_Bot_Group</td>
+<td></td>
+<td>XA_AlarmNet_Bot_Group=Group_<br>Mils</td>
+<td>By default, AlarmNets will spawn ANY bots in the world with the prefix “xa_autobot_” in their Name as well as using the flag InWorld=False. Autobots can be respawned infinitely, but Only one instance of an autobot can exist at a time.<br><br>This flag will instead only use bots from a group. Grouped bots are named<br>“xa_autobot_group_name_” where “group_name” is used by this flag</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_Spawn_Delay_Min</td>
+<td>Seconds</td>
+<td>XA_Spawn_Delay_Min=2</td>
+<td>Minimum time in seconds before spawning a bot</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_Spawn_Delay_Max</td>
+<td>Seconds</td>
+<td>XA_Spawn_Delay_Max=6</td>
+<td>Maximum time in seconds before spawning a bot</td>
+</tr>
+<tr>
+<td><h2>Switches</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Required</td>
+<td>XA_AlarmNetName</td>
+<td></td>
+<td>XA_AlarmNetName=alarm01</td>
+<td>Tag used by the AlarmNet network that this switch is a part of</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>XA_IsAlarmSwitch</td>
+<td>Yes | No</td>
+<td>XA_IsAlarmSwitch=Yes</td>
+<td>Whether this entity is a switch used in an AlarmNet network</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_AlarmNet_OnTime_Min</td>
+<td>Seconds</td>
+<td>XA_AlarmNet_OnTime_Min=20</td>
+<td>Minimum time alarm will be on</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_AlarmNet_OnTime_Max</td>
+<td>Seconds</td>
+<td>XA_AlarmNet_OnTime_Max=30</td>
+<td>Maximum time alarm will be on</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>XA_Switch_PressTime</td>
+<td>Seconds</td>
+<td>XA_Switch_PressTime=1</td>
+<td>How long in seconds bot must be pressing switch before alarm is turned on</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_AlarmNet_Max_Num_TurnOns</td>
+<td>1 to 255</td>
+<td>XA_AlarmNet_Max_Num_TurnO-<br>Ns=1</td>
+<td>Maximum number of times the alarm can be turned on from this switch</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>UseBy</td>
+<td>Mil</td>
+<td>UseBy=Mil</td>
+<td>AlarmNet switches are typically only used by Mils. This flag is optional</td>
+</tr>
+<tr>
+<td><h2>Doors</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Required</td>
+<td>XA_AlarmNetName</td>
+<td></td>
+<td>XA_AlarmNetName=alarm01</td>
+<td>Tag used by the AlarmNet network that this door is a part of</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>XA_IsAlarmDoor</td>
+<td>Yes | No</td>
+<td>XA_IsAlarmDoor=Yes</td>
+<td>Whether this entity is a door used by an AlarmNet network</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_AlarmDoor_Ctrl</td>
+<td>Alarm_On_Opens<br></td>
+<td>Alarm_On_Shuts<br></td>
+<td>Alarm_On_Locks<br></td>
+</tr>
+<tr>
+<td><h2>Mesh Entities</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Mesh</td>
+<td>A, B</td>
+<td>Mesh=gom_lightA1,gom_lightA0</td>
+<td>Ape mesh this entity uses when AlarmNet is off, ape mesh when AlarmNet is activated</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Anim</td>
+<td>Animation MTX name</td>
+<td>Anim=GOM_lightA0</td>
+<td>Animation to use when AlarmNet is activated</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AnimSpeed</td>
+<td>Float</td>
+<td>Animspeed=0.8</td>
+<td>Animation speed. Higher numbers = slower speeds</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>XA_IsAlarm</td>
+<td>Yes | No</td>
+<td>XA_IsAlarm=Yes</td>
+<td>Whether this mesh entity is used in an AlarmNet network. When AlarmNet is activated, the Mesh changes from A to B specified by Mesh= and Sound_Ambient_Off_ is set to On</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_AlarmNetName</td>
+<td></td>
+<td>XA_AlarmNetName=alarm01</td>
+<td>Tag used by the AlarmNet network that this mesh is a part of</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_Alarm_Notify_Rad</td>
+<td></td>
+<td>XA_Alarm_Notify_Rad=75</td>
+<td>Distance to alert bots of this alarm</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sound_Ambient_Tag</td>
+<td>Sound name</td>
+<td>Sound_Ambient_Tag=L07_almext</td>
+<td>Sound Wav name or sfb tag to play when the AlarmNet is activated</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sound_Ambient_Volume</td>
+<td>0.0 to 1.0</td>
+<td>Sound_Ambient_Volume=1</td>
+<td>Volume of the sound</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sound_Ambient_Radius</td>
+<td></td>
+<td>Sound_Ambient_Radius=100</td>
+<td>Distance the sound can be heard</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sound_Ambient_Off</td>
+<td>0 | 1</td>
+<td>Sound_Ambient_Off=1</td>
+<td>If set to 1, sound will be off by default until AlarmNet is activated</td>
+</tr>
+</tbody>
+</table>
+<h2 id="spawn-system-flags">Spawn System flags</h2>
+<p>Flags used for spawn system entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>SS_Net_Name</td>
+<td></td>
+<td>SS_Net_Name=spawnnet01</td>
+<td>Tag used for this spawn system network. All components of this network must share this<br>Name</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SS_Net_BotType</td>
+<td>Swarmer</td>
+<td>Vermin</td>
+<td>SS_Net_BotType=Swarmer</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SS_Net_NumLiving_Limit_0</td>
+<td>0 to 255</td>
+<td>SS_Net_NumLiving_Limit_0=50</td>
+<td>Maximum number of living bots spawned at this defcon level.<br>The defcon level can be set automatically by the game based on various factors, or forced To a specified defcon level by a tripwire.<br>Level 0 = No spawn point on the network is in the Active list, or visible</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SS_Net_NumLiving_Limit_1</td>
+<td>0 to 255</td>
+<td>SS_Net_NumLiving_Limit_1=50</td>
+<td>Maximum number of living bots spawned at this defcon level.<br>Level 1 = at least one spawn pt on the network is in the active list</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SS_Net_NumLiving_Limit_2</td>
+<td>0 to 255</td>
+<td>SS_Net_NumLiving_Limit_2=50</td>
+<td>Maximum number of living bots spawned at this defcon level<br>Level 2 = at least one spawn pt on the network is in the visible list</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SS_Net_NumLiving_Limit_3</td>
+<td>0 to 255</td>
+<td>SS_Net_NumLiving_Limit_3=50</td>
+<td>Maximum number of living bots spawned at this defcon level.<br>Level 3 = the player is in the same volume as at least one spawn pt</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SS_Net_Bot_Wander_Dist</td>
+<td></td>
+<td>SS_Net_Bot_Wander_Dist=150</td>
+<td>Distance bots spawned by this net are allowed to wander from their spawn point</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SS_Net_Bot_Attack_Dist</td>
+<td></td>
+<td>SS_Net_Bot_Attack_Dist=500</td>
+<td>Distance bots spawned by this net are allowed to go while attacking the player</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SS_Net_Hidden_Pt_Spline</td>
+<td>True | False</td>
+<td>SS_Net_Hidden_Pt_Spline=True</td>
+<td>Bots can only be spawned on points that the player cannot see or if they’re not looking</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SS_Visible_Pt_Spline</td>
+<td>True | False</td>
+<td>SS_Visible_Pt_Spline=True</td>
+<td>Bots can spawn even if their spawn points are visible to the player</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SS_Net_Ctrl</td>
+<td>No_Auto_Defcon</td>
+<td>SS_Net_Ctrl=No_Auto_Defcon</td>
+<td>Prevents game from changing defcon level automatically</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SS_NET_DEFCONTRIPWIRE</td>
+<td>Yes | No</td>
+<td>SS_NET_DEFCONTRIPWIRE=<br>Yes</td>
+<td>Only used on tripwires. The defcon level of a spawn net will be forced to the specified<br>Number. SS_Net_Name MUST be used on the tripwire as well</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SS_DEFCONTRIPWIRE_DEFCON</td>
+<td>0 to 3</td>
+<td>SS_DEFCONTRIPWIRE_DEFCO-<br>N=3</td>
+<td>Only used on tripwires. The defcon level the spawn net will be forced to. SS_Net_Name<br>MUST be used on the tripwire as well</td>
+</tr>
+</tbody>
+</table>
+<h2 id="control-console-flags">Control Console flags</h2>
+<p>Flags used for Control Console entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>Type=Console</td>
+<td></td>
+<td></td>
+<td>Required for control console entities</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>SocketCount=5</td>
+<td></td>
+<td></td>
+<td>Number of chip sockets. Do not change</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>SocketName=chip</td>
+<td></td>
+<td></td>
+<td>Name of socket. Do not change</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>InsertedChipCount</td>
+<td>0 to 5</td>
+<td>InsertedChipCount=4</td>
+<td>Amount of chips already inserted in control console. Player must have chips to insert before Using this console</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>ChipScale=.5</td>
+<td></td>
+<td></td>
+<td>Scale of inserted chip. Do not change</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>EnemyName</td>
+<td></td>
+<td>EnemyName=xa_autobot_Goff</td>
+<td>Name of bot controlled by this console. If the bot is created by a dispenser, the name must Have the prefix “xa_autobot_” otherwise bot can only be controlled once until it dies</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Dispenser</td>
+<td></td>
+<td>Dispenser=disp01</td>
+<td>Name of dispenser entity this control console is linked to, if controlled bot is built by a<br>Dispenser every time console is used</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>UseOnce</td>
+<td>True | False</td>
+<td>UseOnce=True</td>
+<td>Prevent console from being used more than one time</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dispenser-flags">Dispenser flags</h2>
+<p>Flags used for dispenser entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>XA_IsDispenser=True</td>
+<td></td>
+<td></td>
+<td>Required for dispenser entities</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>include=t_dispense</td>
+<td></td>
+<td></td>
+<td>Required for dispenser entities. Specifies CSV file with needed property flags</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>name=</td>
+<td></td>
+<td>name=disp01</td>
+<td>Tags this entity with a name used by other entities or in scripting</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_Dispenser_Bot1Name</td>
+<td></td>
+<td>XA_Dispenser_Bot1Name=xa_<br>autobot_Goff1</td>
+<td>The name of the bot entity spawned by this dispenser. Bot name MUST use prefix<br>“xa_autobot_” so it can be spawned again after death.</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_Dispenser_Bot2Name</td>
+<td></td>
+<td>XA_Dispenser_Bot1Name=xa_<br>autobot_Goff2</td>
+<td>Additional bot(s) to spawn from this dispenser</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_Dispenser_Bot3Name</td>
+<td></td>
+<td>XA_Dispenser_Bot1Name=xa_<br>autobot_Goff3</td>
+<td>Additional bot(s) to spawn from this dispenser</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_Dispenser_Wait_For_Bot_Death</td>
+<td>True | False</td>
+<td></td>
+<td>Wait for bot to die before spawning another</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_Dispenser_Randomize_Bots</td>
+<td>True | False</td>
+<td></td>
+<td>Randomize bots</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_Dispenser_Bots_Per_Session</td>
+<td>0 to 255</td>
+<td></td>
+<td>Number of bots spawned at once</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_Dispenser_Secs_Between_Spawns</td>
+<td>Seconds</td>
+<td>XA_Dispenser_Secs_Between_S-<br>pawns=3</td>
+<td>Seconds between spawning bots</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_Dispenser_Only_Specified_Bots</td>
+<td>True | False</td>
+<td></td>
+<td>Only spawn the bots specified</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>XA_AlarmNetName</td>
+<td></td>
+<td>XA_AlarmNetName=alarm01</td>
+<td>AlarmNet network this dispenser is linked to.<br>If this dispenser is for spawning a bot used by a control console, the value MUST be<br>Consolegrunt</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sound-entity-flags">Sound Entity flags</h2>
+<p>Flags used for sound entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sound emitter entities in the world must use prefix sound_</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sound_Ambient_Tag</td>
+<td>Sound name</td>
+<td>Sound_Ambient_Tag=L09_Consol<br>2</td>
+<td>Sound Wav name or sfb tag to play</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sound_Ambient_Volume</td>
+<td>0.0 to 1.0</td>
+<td>Sound_Ambient_Volume=0.5</td>
+<td>Sound volume</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sound_Ambient_Radius</td>
+<td></td>
+<td>Sound_Ambient_Radius=15</td>
+<td>Radius sound can be heard</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Sound_Ambient_Off</td>
+<td>0 | 1</td>
+<td>Sound_Ambient_Off=1</td>
+<td>Whether the sound should start off</td>
+</tr>
+</tbody>
+</table>
+<h2 id="particle-flags">Particle flags</h2>
+<p>Flags used for sound entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Particle emitter entities in the world must use prefix part_</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Type=particle</td>
+<td></td>
+<td></td>
+<td>Required for particle entities</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>PartDef</td>
+<td>Particle fpr name</td>
+<td>PartDef=steam</td>
+<td>Name of the particle fpr file</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Intensity</td>
+<td>0 to 100</td>
+<td>Intensity=75</td>
+<td>Intensity of the particle emitter</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>DelaySpawn</td>
+<td>True | False</td>
+<td>DelaySpawn=True</td>
+<td>Whether particle emitter should start disabled</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>CanEliminateOnLesserSystems</td>
+<td>0 | 1</td>
+<td>CanEliminateOnLesserSystems=1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="detpack-flags">DetPack flags</h2>
+<p>Flags used for detpack receptacle entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>Type=detpackdrop</td>
+<td></td>
+<td></td>
+<td>Required for detpack receptacle entities</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Mesh=gwdmdetholo,gwdmdetpack</td>
+<td></td>
+<td></td>
+<td>Meshes used. Does not need to be changed</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>CountDown_Time</td>
+<td>Seconds</td>
+<td>CountDown_Time=6</td>
+<td>Countdown timer until explosion</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Activate_Sound=swdmdetpset</td>
+<td></td>
+<td></td>
+<td>Activation sound. Does not need to be changed</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Beep_Sound=swdmdetblip</td>
+<td></td>
+<td></td>
+<td>Beeping sound. Does not need to be changed</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Master</td>
+<td></td>
+<td>Master=detpack1</td>
+<td>Sets another DetPack as this ones master</td>
+</tr>
+</tbody>
+</table>
+<h2 id="zipline-flags">ZipLine flags</h2>
+<p>Flags used for zipline spline entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required</td>
+<td>Type=zipline</td>
+<td></td>
+<td></td>
+<td>Required for zipline entities</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Give</td>
+<td>0.0 to 1.0</td>
+<td>Give=0.02</td>
+<td>The amount the zipline should give</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Friction</td>
+<td>0.0 to 1.0</td>
+<td>Friction=0</td>
+<td>Amount of friction</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Visible</td>
+<td>0 | 1</td>
+<td>Visible=1</td>
+<td>Whether the zipline is visible or invisible. 1 = visible</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Colorbias</td>
+<td>R,G,B,A</td>
+<td>Colorbias=200,200,200,255</td>
+<td>The color of the zipline</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Texture</td>
+<td>Texture Name</td>
+<td>Texture=tf_zip02</td>
+<td>Texture to use for the zipline</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>TextureRepeat</td>
+<td>0.0 to 1.0</td>
+<td></td>
+<td>Amount of times to repeat the texture per foot</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Accel</td>
+<td>1.0 to 2.0</td>
+<td>Accel=1.3</td>
+<td>Amount of acceleration. 1.0 = none, 2.0 = max</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vehicle-flags">Vehicle flags</h2>
+<p>Flags used for vehicle entities
+Vehicles can use flags similar to bots such as AI_Job=Patrol etc, useful for changing behavior of a bot when driving a vehicle</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><h2>Shared flags</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>No_Player_Drive</td>
+<td>True | False</td>
+<td></td>
+<td>Prevents player from entering vehicle</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>No_Entity_Drive</td>
+<td>True | False</td>
+<td></td>
+<td>Prevents all entities from entering vehicle</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>DriverExit</td>
+<td>True | False</td>
+<td></td>
+<td>Whether driver is allowed to exit the vehicle</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>GunnerExit</td>
+<td>True | False</td>
+<td></td>
+<td>Whether the gunner is allowed to exit the vehicle (Rat only)</td>
+</tr>
+<tr>
+<td><h2>Rat</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Type=vehiclerat</td>
+<td></td>
+<td></td>
+<td>Required for Rat vehicle</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>DroidRatMesh</td>
+<td>0 | 1</td>
+<td>DroidRatMesh=1</td>
+<td>Whether to use the Droid version of the Rat</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ZobbyGunning</td>
+<td>0 | 1</td>
+<td>ZobbyGunning=1</td>
+<td>If Zobby is using the turret</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>ArmorProfile</td>
+<td></td>
+<td>ArmorProfile=PlayerRat</td>
+<td>Uses entries from armor.csv. Use nohitpoint if vehicle recieves no damage</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>RatDeadFlip</td>
+<td>0 | 1</td>
+<td>RatDeadFlip=1</td>
+<td>Whether an enemy Rat should flip when it dies</td>
+</tr>
+<tr>
+<td><h2>Loader</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Type=vehicleloader</td>
+<td></td>
+<td></td>
+<td>Required for Loader vehicle</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Gun</td>
+<td>On | Off</td>
+<td>Gun=Off</td>
+<td>Turns the Loaders gun on or off</td>
+</tr>
+<tr>
+<td><h2>Sentinel Tank</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Type=vehicletank</td>
+<td></td>
+<td></td>
+<td>Required for tank entities</td>
+</tr>
+<tr>
+<td><h2>Pillbox Turret</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Type=SiteWeapon</td>
+<td></td>
+<td></td>
+<td>Required for Pillbox turret vehicles</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>WeaponType=Pillbox</td>
+<td></td>
+<td></td>
+<td>Specifies this as a Pillbox turret</td>
+</tr>
+<tr>
+<td><h2>AAGun</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Type=botAAgun</td>
+<td></td>
+<td></td>
+<td>Required for AAGun vehicle</td>
+</tr>
+<tr>
+<td>Required</td>
+<td>AAGun_Full360</td>
+<td>True | False</td>
+<td>AAGun_Full360=False</td>
+<td>If the gun is allowed to rotate a full 360</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AAGun_MaxHeeading</td>
+<td>0 to 100</td>
+<td>AAGun_MaxHeeading=100</td>
+<td>Number of degrees to turn to the right</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AAGun_MaxPitch</td>
+<td>0 to 100</td>
+<td>AAGun_MaxPitch=100</td>
+<td>Number of degrees to aim down</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AAGun_Morter</td>
+<td>True | False</td>
+<td>AAGun_Morter=True</td>
+<td>Whether the AAGun has a mortar launcher</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sentry-flags">Sentry flags</h2>
+<p>Flags used for sentry entities</p>
+<table>
+<thead>
+<tr>
+<th><strong>Required</strong></th>
+<th><strong>Flag</strong></th>
+<th><strong>Value(s)</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><h2>Ground Sentry</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Type=SiteWeapon</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Required</td>
+<td>WeaponType=FloorSentry</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>PatrolMinYaw</td>
+<td>-360 to 0</td>
+<td>PatrolMinYaw=-45</td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>PatrolMaxYaw</td>
+<td>0 to 360</td>
+<td>PatrolMaxYaw=45</td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SpotLight</td>
+<td>On</td>
+<td>Off</td>
+<td>SpotLight=Off</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>SpotLightRange</td>
+<td></td>
+<td>SpotLightRange=250</td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>VisionDistance</td>
+<td></td>
+<td>VisionDistance=200</td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>RadarDistance</td>
+<td></td>
+<td>RadarDistance=200</td>
+<td></td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>AttackDelayTime</td>
+<td></td>
+<td>AttackDelayTime=2</td>
+<td></td>
+</tr>
+<tr>
+<td><h2>Ceiling sentry</h2></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Required</td>
+<td>Type=SiteWeapon</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Required</td>
+<td>WeaponType=wallsentry</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="starcommands.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Star Commands" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Star Commands
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+<script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+
+<script src="assets/javascripts/iframe-worker.js"></script>
+<script src="search/search_index.js"></script>
+
+
+    
+      <script src="assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,15 @@
+/* Make Tables smaller */
+
+.md-typeset table:not([class]) th {
+	padding: 0.2em 1.0em;
+}
+
+.md-typeset table:not([class]) td {
+	padding: 0.2em 1.0em;
+}
+
+/* More real estate */
+
+.md-grid {
+	max-width: 90%;
+}

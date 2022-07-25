@@ -1,0 +1,1284 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>File Formats - METAL ARMS DOCS</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#file-formats" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="METAL ARMS DOCS" class="md-header__button md-logo" aria-label="METAL ARMS DOCS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            METAL ARMS DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              File Formats
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="METAL ARMS DOCS" class="md-nav__button md-logo" aria-label="METAL ARMS DOCS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    METAL ARMS DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          File Formats
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="fileformats.html" class="md-nav__link md-nav__link--active">
+        File Formats
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#archive-formats" class="md-nav__link">
+    Archive Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Archive Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mst" class="md-nav__link">
+    .mst
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blt" class="md-nav__link">
+    .blt
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-model-formats" class="md-nav__link">
+    3D Model Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="3D Model Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ape" class="md-nav__link">
+    .ape
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wld" class="md-nav__link">
+    .wld
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texture-formats" class="md-nav__link">
+    Texture Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Texture Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tga" class="md-nav__link">
+    .tga
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animation-formats" class="md-nav__link">
+    Animation Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Animation Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mtx" class="md-nav__link">
+    .mtx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cam" class="md-nav__link">
+    .cam
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-formats" class="md-nav__link">
+    Audio Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Audio Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sfb" class="md-nav__link">
+    .sfb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wvb" class="md-nav__link">
+    .wvb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wvs" class="md-nav__link">
+    .wvs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pss" class="md-nav__link">
+    .pss
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-formats" class="md-nav__link">
+    Configuration Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv" class="md-nav__link">
+    .csv
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripting-formats" class="md-nav__link">
+    Scripting Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Scripting Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sma" class="md-nav__link">
+    .sma
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous-formats" class="md-nav__link">
+    Miscellaneous Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Miscellaneous Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rdx" class="md-nav__link">
+    .rdx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rdg" class="md-nav__link">
+    .rdg
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-pathfinding-formats" class="md-nav__link">
+    AI Pathfinding Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Pathfinding Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gt" class="md-nav__link">
+    .gt
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#particle-effect-formats" class="md-nav__link">
+    Particle Effect Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Particle Effect Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fpr" class="md-nav__link">
+    .fpr
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-formats" class="md-nav__link">
+    Video Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Video Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bik" class="md-nav__link">
+    .bik
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#font-formats" class="md-nav__link">
+    Font Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Font Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fnt" class="md-nav__link">
+    .fnt
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool-formats" class="md-nav__link">
+    Tool Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Tool Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aid" class="md-nav__link">
+    .aid
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="levels.html" class="md-nav__link">
+        Level Names
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="starcommands.html" class="md-nav__link">
+        Star Commands
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="userdata.html" class="md-nav__link">
+        Gamedata
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#archive-formats" class="md-nav__link">
+    Archive Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Archive Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mst" class="md-nav__link">
+    .mst
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blt" class="md-nav__link">
+    .blt
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-model-formats" class="md-nav__link">
+    3D Model Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="3D Model Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ape" class="md-nav__link">
+    .ape
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wld" class="md-nav__link">
+    .wld
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texture-formats" class="md-nav__link">
+    Texture Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Texture Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tga" class="md-nav__link">
+    .tga
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animation-formats" class="md-nav__link">
+    Animation Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Animation Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mtx" class="md-nav__link">
+    .mtx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cam" class="md-nav__link">
+    .cam
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-formats" class="md-nav__link">
+    Audio Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Audio Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sfb" class="md-nav__link">
+    .sfb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wvb" class="md-nav__link">
+    .wvb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wvs" class="md-nav__link">
+    .wvs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pss" class="md-nav__link">
+    .pss
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-formats" class="md-nav__link">
+    Configuration Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv" class="md-nav__link">
+    .csv
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripting-formats" class="md-nav__link">
+    Scripting Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Scripting Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sma" class="md-nav__link">
+    .sma
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous-formats" class="md-nav__link">
+    Miscellaneous Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Miscellaneous Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rdx" class="md-nav__link">
+    .rdx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rdg" class="md-nav__link">
+    .rdg
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-pathfinding-formats" class="md-nav__link">
+    AI Pathfinding Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Pathfinding Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gt" class="md-nav__link">
+    .gt
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#particle-effect-formats" class="md-nav__link">
+    Particle Effect Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Particle Effect Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fpr" class="md-nav__link">
+    .fpr
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-formats" class="md-nav__link">
+    Video Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Video Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bik" class="md-nav__link">
+    .bik
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#font-formats" class="md-nav__link">
+    Font Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Font Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fnt" class="md-nav__link">
+    .fnt
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool-formats" class="md-nav__link">
+    Tool Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Tool Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aid" class="md-nav__link">
+    .aid
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="file-formats">File Formats</h1>
+<hr />
+<p>Quick reference guide of every format and what they do</p>
+<h2 id="archive-formats">Archive Formats</h2>
+<hr />
+<h3 id="mst">.mst</h3>
+<p>Archive Format</p>
+<p><strong>M</strong>a<strong>st</strong>er</p>
+<hr />
+<p>An archive file that stores most of the other files within the game.
+The easiest comparison is a .zip or .7z file with no compression.</p>
+<p>MA_WIN can generate an asset log to "optimize load times" for the game, 
+PASM can take this file and use it as a reference for how to "optimize" the MST to reduce load times.
+This process also "locks" it to prevent further modifications. You can "unlock" the mst
+however it undos the optimization.</p>
+<ul>
+<li>mettlearms_gc.mst - Found in all GameCube releases</li>
+<li>mettlearms_xb.mst - Found in all Xbox releases</li>
+<li>MASTRPS2.MST - Found in all PlayStation 2 releases</li>
+</ul>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/dj0wns/DJs_MA_TOOLs/blob/master/mst_extract.py">https://github.com/dj0wns/DJs_MA_TOOLs/blob/master/mst_extract.py</a></td>
+<td>The most feature complete python script for extracting the contents of the MST file, currently works with GameCube and Xbox, PS2 is not supported.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/amPerl/MATools/blob/master/tools/extract.py">https://github.com/amPerl/MATools/blob/master/tools/extract.py</a></td>
+<td>The very first MST extractor ever created, rendered obsolete by the tool above, this one's only advantage is PS2 MST support.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="blt">.blt</h3>
+<p>Archive Format (PS2 Exclusive)</p>
+<p><strong>B</strong>o<strong>lt</strong></p>
+<hr />
+<p>Archive Format developed and used by Mass Media</p>
+<h2 id="3d-model-formats">3D Model Formats</h2>
+<hr />
+<h3 id="ape">.ape</h3>
+<p>3D Model Format</p>
+<p><strong>Ape</strong></p>
+<hr />
+<p>No Documentation yet</p>
+<h3 id="wld">.wld</h3>
+<p>3D Model Format</p>
+<p><strong>W</strong>or<strong>ld</strong></p>
+<hr />
+<p>Wld Files are the format used to store each level in the game.</p>
+<p>The terrain of the level is broken up into cells. Each cell is a region
+of the level is formatted the same as the .ape file</p>
+<h2 id="texture-formats">Texture Formats</h2>
+<hr />
+<h3 id="tga">.tga</h3>
+<p>Texture Format</p>
+<p>???</p>
+<hr />
+<p>No Documentation yet</p>
+<h2 id="animation-formats">Animation Formats</h2>
+<hr />
+<h3 id="mtx">.mtx</h3>
+<p>Model Animation Format</p>
+<p>???</p>
+<hr />
+<p>Mtx Files store the animation data for each of the ape files that store a hierarchy.</p>
+<h3 id="cam">.cam</h3>
+<p>Camera Animation Format</p>
+<p><strong>Cam</strong>era</p>
+<hr />
+<p>Cam Files store camera animations used as part of scripted sequences</p>
+<h2 id="audio-formats">Audio Formats</h2>
+<hr />
+<h3 id="sfb">.sfb</h3>
+<p>Audio Format</p>
+<p>???</p>
+<hr />
+<p>The file format is currently unknown as to it's purpose, more research
+is required.</p>
+<h3 id="wvb">.wvb</h3>
+<p>Audio Format</p>
+<p>???</p>
+<hr />
+<p>No Documentation yet</p>
+<h3 id="wvs">.wvs</h3>
+<p>Audio Format</p>
+<p>???</p>
+<hr />
+<p>No Documentation yet</p>
+<h3 id="pss">.pss</h3>
+<p>Audio Format (PlayStation 2 Exclusive)</p>
+<p>???</p>
+<hr />
+<p>Pss is a file format found exclusively in the PS2 version of Metal Arms.</p>
+<p>It can be implied these are video formats based on the observation that they
+are found within folders named VIDEO1 and VIDEO2 on the PS2 ISO. Not much
+beyond that however is known.</p>
+<h2 id="configuration-formats">Configuration Formats</h2>
+<hr />
+<h3 id="csv">.csv</h3>
+<p>Config Format</p>
+<p><strong>C</strong>omma <strong>S</strong>eperated <strong>V</strong>alues (CSV)</p>
+<hr />
+<p>Binary Files that control different components of the game such as what skybox to spawn
+on a level or how large a clip for a weapon should be.</p>
+<p>These files were originally .csv files similar to excel spreadsheets
+or google sheets. It is possible to decompile them back into .csv but they
+will lack comments or formatting</p>
+<p>Each .csv is composed of tables and entries. Tables are pointers to regions of entries.
+Each .csv will have it's own unique set of tables of entries whose purpose is only known
+to the game code itself.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/dj0wns/DJs_MA_TOOLs/blob/master/mst_extract.py">https://github.com/dj0wns/DJs\_MA\_TOOLs/blob/master/mst\_extract.py</a></td>
+<td>When contents of the MST are extracted, the extractor automatically converts the binary CSV files back to their original CSV representation.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="scripting-formats">Scripting Formats</h2>
+<hr />
+<h3 id="sma">.sma</h3>
+<p>Script / Code Format</p>
+<p><strong>sma</strong>ll</p>
+<hr />
+<p>Sma files are the script files used by the Small Programing Language.</p>
+<p>It is believed that the Small language is interpreted, meaning that every
+executable of Metal Arms has a Small interpreter compiled in.</p>
+<p>Extensive testing along with R&amp;D required.</p>
+<h2 id="miscellaneous-formats">Miscellaneous Formats</h2>
+<hr />
+<h3 id="rdx">.rdx</h3>
+<p>Misc Format (Xbox Exclusive)</p>
+<p><strong>R</strong>egular <strong>D</strong>ata <strong>X</strong>box</p>
+<hr />
+<p>No Documentation yet</p>
+<h3 id="rdg">.rdg</h3>
+<p>Misc Format (GameCube Exclusive)</p>
+<p><strong>R</strong>egular <strong>D</strong>ata <strong>G</strong>ameCube</p>
+<hr />
+<p>This file format, only found in GameCube Msts is related to sound effects.</p>
+<p>6 variations</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>snd_smpls.rdg</td>
+<td>Renamed Musyx .samp file</td>
+</tr>
+<tr>
+<td>snd_init.rdg</td>
+<td>Musyx .sdir, .pool &amp; .proj packaged together</td>
+</tr>
+<tr>
+<td>mabannerp.rdg</td>
+<td>Renamed GameCube .tpl file, GameCube Save File Banner</td>
+</tr>
+<tr>
+<td>maicon.rdg</td>
+<td>Renamed GameCube .tpl file, GameCube Save File Icon</td>
+</tr>
+<tr>
+<td>l?.rdg</td>
+<td>Where ? is the name of a wld without the first character, UNKNOWN PURPOSE</td>
+</tr>
+<tr>
+<td>?.rdg</td>
+<td>Where ? corresponds to a .sfb file sharing the same name, audio related</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/Nisto/musyx-extract">https://github.com/Nisto/musyx-extract</a></td>
+<td>Tool that uses .sdir and .samp files as input and generates .dsp audio files that can be read by most Audio Players</td>
+</tr>
+<tr>
+<td><a href="https://github.com/libertyernie/brawltools/releases">https://github.com/libertyernie/brawltools/releases</a></td>
+<td>Tool that can read mabannerp.rdg &amp; maicon.rdg when their extension is renamed to .tpl</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ai-pathfinding-formats">AI Pathfinding Formats</h2>
+<hr />
+<h3 id="gt">.gt</h3>
+<p>Pathfinding Format</p>
+<p>???</p>
+<hr />
+<p>Gt files are responsible for all the AI pathing required for a wld. Pathfinding
+relies on a series of connected nodes. From this information it can be inferred
+that Metal Arms uses a form of A* pathfinding.</p>
+<h2 id="particle-effect-formats">Particle Effect Formats</h2>
+<hr />
+<h3 id="fpr">.fpr</h3>
+<p>Particle Effect Format</p>
+<p><strong>F</strong>ang <strong>P</strong>a<strong>r</strong>ticle</p>
+<hr />
+<p>Stores particle effects.
+All particles are made up of camera facing quads.</p>
+<p>Particle files are proven to be quite powerful, even having the ability to cast
+realtime shadows if enabled! However the full potential of the fpr file is currently
+unknown, extensive testing required.</p>
+<h2 id="video-formats">Video Formats</h2>
+<hr />
+<h3 id="bik">.bik</h3>
+<p>Video Format</p>
+<p><strong>bik</strong></p>
+<hr />
+<p>Bik is a file format for prerendered videos used for some of the cutscenes in the game.</p>
+<h2 id="font-formats">Font Formats</h2>
+<hr />
+<h3 id="fnt">.fnt</h3>
+<p>Video Format</p>
+<p><strong>F</strong>o<strong>nt</strong></p>
+<hr />
+<p>Used to indicate how a .tga texture can be rendered as a font</p>
+<h2 id="tool-formats">Tool Formats</h2>
+<hr />
+<h3 id="aid">.aid</h3>
+<p>Tool Format</p>
+<p>???</p>
+<hr />
+<p>Used as a metadata file when compiling an asset with PASM.</p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="levels.html" class="md-footer__link md-footer__link--next" aria-label="Next: Level Names" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Level Names
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+<script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+
+<script src="assets/javascripts/iframe-worker.js"></script>
+<script src="search/search_index.js"></script>
+
+
+    
+      <script src="assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
